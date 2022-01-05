@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    /*adjacebt sibling selector*/
+         h2+div{
+            background-color: blueviolet;
+        } 
+        div+h2{
+            background-color: deeppink;
+        }
+    /* general sibling selector               */
+         h2~div{
+            background-color: chartreuse;
+        }  
+        div~h2{
+            background-color: fuchsia;
+        }
+    /*child combiner*/
+         body>div{
+            background-color: chocolate;
+        }
+        body>h2{
+            background-color: crimson;
+        }  
+    /*descendent combiner*/
+          body div{
+            background-color: darkmagenta;
+        }
+        body h2{
+            background-color: darkturquoise;
+        }  
+    </style>
+
+</head>
+<body>
+    <div>thi is first div</div>
+    <section>
+      <div>this is section div</div>
+    </section>  
+    <h2>this first heaindg of h2</h2>
+    <h2>this is second heading of h2</h2>
+    <div>this is second div</div>
+    <h2>this is third heading of h2</h2>
+</body>
+</html>
